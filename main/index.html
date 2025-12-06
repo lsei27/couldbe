@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COULDBE | Coming Soon</title>
+  <style>
+    :root {
+      --bg: #feed00;
+      --text: #4a7e4a;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .wrap {
+      display: grid;
+      gap: 1.5rem;
+      max-width: 960px;
+      padding: 3rem 1.5rem;
+      align-items: center;
+    }
+    h1, h2 {
+      letter-spacing: -0.02em;
+      text-transform: lowercase;
+      line-height: 1.05;
+      margin: 0;
+    }
+    h1 {
+      font-size: clamp(3rem, 7vw, 5.4rem);
+    }
+    h2 {
+      font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+      font-weight: 600;
+    }
+    .spacer {
+      height: 1.5rem;
+    }
+    .soon {
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: lowercase;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>couldbe</h1>
+    <h2>shaping what your brands could be</h2>
+    <div class="spacer" aria-hidden="true"></div>
+    <p class="soon">&nbsp;&nbsp;coming soon...</p>
+  </main>
+</body>
+</html>
