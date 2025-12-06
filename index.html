@@ -17,7 +17,7 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -26,32 +26,38 @@
     }
     .wrap {
       display: grid;
-      gap: 1.5rem;
+      gap: 1rem; /* Zmenšil jsem mezeru mezi logem a textem */
       max-width: 960px;
       padding: 3rem 1.5rem;
       align-items: center;
     }
     h1, h2 {
-      letter-spacing: -0.02em;
       text-transform: lowercase;
-      line-height: 1.05;
+      line-height: 1; /* Ještě menší řádkování pro kompaktnost */
       margin: 0;
     }
     h1 {
-      font-size: clamp(3rem, 7vw, 5.4rem);
+      /* Zvětšil jsem maximální velikost loga a více srazil písmena */
+      font-size: clamp(3.5rem, 13vw, 8rem);
+      font-weight: 700;
+      letter-spacing: -0.05em; 
     }
     h2 {
-      font-size: clamp(1.6rem, 4.5vw, 2.4rem);
-      font-weight: 600;
+      /* Zde je hlavní změna: menší font a tenčí řez */
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      font-weight: 300; /* 300 je tenké, 400 je normální */
+      letter-spacing: 0.02em; /* Lehce vzdušnější pro čitelnost malého textu */
+      opacity: 0.9; /* Jemné zjemnění barvy */
     }
     .spacer {
       height: 1.5rem;
     }
     .soon {
-      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: lowercase;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -59,8 +65,7 @@
   <main class="wrap">
     <h1>couldbe</h1>
     <h2>shaping what your brands could be</h2>
-    <div class="spacer" aria-hidden="true"></div>
-    <p class="soon">&nbsp;&nbsp;coming soon...</p>
+    <p class="soon">coming soon...</p>
   </main>
 </body>
 </html>
